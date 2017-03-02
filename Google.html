@@ -21,10 +21,12 @@
   </head>
   <body>
 
+  <template id="template_indhold">
    <div id="indhold">
    <h1>LOL</h1>
-   <p>Sikke noget lort</p>
+   <p class="skrift">Sikke noget lort</p>
    </div>
+      </template>
 
     <div id="map"></div>
     <script>
@@ -88,7 +90,9 @@
 
         marker2.addListener('click', function() {
           map.setCenter(marker2.getPosition());
-            infowindow.setContent(indhold);
+            var klon = document.querySelector("#template_indhold").content.cloneNode(true);
+            klon.querySelector(".skrift").innerHTML = "SIkke noget lort";
+            infowindow.setContent(klon);
             infowindow.open(map, marker2);
 
         });
