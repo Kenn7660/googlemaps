@@ -20,12 +20,19 @@
     </style>
   </head>
   <body>
+
+   <div id="indhold">
+   <h1>LOL</h1>
+   <p>Sikke noget lort</p>
+   </div>
+
     <div id="map"></div>
     <script>
 
       function initMap() {
         var myLatLng = {lat: -25.363, lng: 131.044};
         var myLatLng2 = {lat: -23.363, lng: 140.044};
+        var indhold = document.querySelector("#indhold");
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
@@ -81,7 +88,9 @@
 
         marker2.addListener('click', function() {
           map.setCenter(marker2.getPosition());
+            infowindow.setContent(indhold);
             infowindow.open(map, marker2);
+
         });
       }
     </script>
