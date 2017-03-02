@@ -25,6 +25,7 @@
 
       function initMap() {
         var myLatLng = {lat: -25.363, lng: 131.044};
+        var myLatLng2 = {lat: -23.363, lng: 140.044};
 
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
@@ -37,6 +38,26 @@
           title: 'Hello World!',
             icon: "trollface.png",
             animation: google.maps.Animation.BOUNCE
+        });
+
+        var marker2 = new google.maps.Marker({
+          position: myLatLng2,
+          map: map,
+          title: 'Hello World!',
+            icon: "trollface.png",
+            animation: google.maps.Animation.BOUNCE
+        });
+
+        marker.addListener('click', function() {
+          map.setZoom(8);
+          map.setCenter(marker.getPosition());
+            window.alert("JEG ER ALARM");
+        });
+
+        marker2.addListener('click', function() {
+          map.setZoom(12);
+          map.setCenter(marker2.getPosition());
+            window.alert("JEG ER OGSÅ ALARM");
         });
       }
     </script>
