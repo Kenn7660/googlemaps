@@ -16,6 +16,7 @@
         margin: 0;
         padding: 0;
       }
+
     </style>
   </head>
   <body>
@@ -23,24 +24,19 @@
     <script>
 
       function initMap() {
-        var myLatLng = {lat: 55.703336, lng: 12.527850};
-        var myLatLng2 = {lat: 55.704276, lng: 12.525967};
+        var myLatLng = {lat: -25.363, lng: 131.044};
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 4,
           center: myLatLng
         });
 
         var marker = new google.maps.Marker({
           position: myLatLng,
           map: map,
-          title: 'LOL'
-        });
-
-        var marker2 = new google.maps.Marker({
-          position: myLatLng2,
-          map: map,
-          title: 'ROFL'
+          title: 'Hello World!',
+            icon: "trollface.png",
+            animation: google.maps.Animation.BOUNCE
         });
       }
     </script>
@@ -49,4 +45,6 @@
     </script>
   </body>
 </html>
+
+AIzaSyC-uWjLbZpR-oC3ylwmnGZvTzpyZPb3P54
 
