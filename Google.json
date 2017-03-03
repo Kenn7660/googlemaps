@@ -1,0 +1,57 @@
+[
+{
+    "id": "cykelskuret",
+    "position": {
+        "lat":55.706538,
+        "lng":12.538950
+    },
+    "icon": "image.jpg",
+    "navn": "Cykelskuret",
+    "beskrivelse": "Her er cykelskuret hvor de prægtige jernheste kan stå i læ",
+    "billede": "cykelskuret.jpg"
+},
+{
+    "id": "lidl",
+    "position": {
+        "lat":55.706334,
+        "lng":12.538201
+    },
+    "icon": "image.jpg",
+    "navn": "Lidl",
+    "beskrivelse": "Her er Lidl, stedet hvor folk der ikke kan lide vores dejlige kantine, kan gå over og købe lææææækker mad",
+    "billede": "lidl.jpg"
+},
+{
+    "id": "rygergaarden",
+    "position": {
+        "lat":55.706274,
+        "lng":12.539740
+    },
+    "icon": "image.jpg",
+    "navn": "Rygergaarden",
+    "beskrivelse": "Her er rygergaarden, her går alle de mennesker ned som gerne vil af med deres lunger før tid",
+    "billede": "rygergaarden.jpg"
+},
+{
+    "id": "parkering",
+    "position": {
+        "lat":55.706740,
+        "lng":12.539636
+    },
+    "icon": "image.jpg",
+    "navn": "Parkering",
+    "beskrivelse": "Her er en af de mange parkeringspladser rundt om KEA, godt at vide på trods af at du ingen bil har, du er jo studerende",
+    "billede": "parkering.jpg"
+},
+{
+    "id": "shell",
+    "position": {
+        "lat":55.706892,
+        "lng":12.538343
+    },
+    "icon": "image.jpg",
+    "navn": "Shell",
+    "beskrivelse": "Her er Shell tanken, her kan du gå hen hvis du vil købe canser pinde og mad til alt for mange penge",
+    "billede": "shell.jpg"
+}
+]
